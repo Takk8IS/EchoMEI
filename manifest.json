@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "EchoMEI",
+    "version": "1.0.0",
+    "description": "EchoMEI é projetado para agilizar o processo de extração e gerenciamento de dados de MEI da Receita Federal do Brasil.",
+    "author": "davcavalcante@proton.me",
+    "homepage_url": "https://github.com/Takk8IS",
+    "permissions": [
+        "activeTab",
+        "downloads",
+        "notifications",
+        "scripting",
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": ["*://*.receita.fazenda.gov.br/*"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "images/icon48.png",
+            "72": "images/icon72.png",
+            "96": "images/icon96.png",
+            "128": "images/icon128.png",
+            "144": "images/icon144.png",
+            "192": "images/icon192.png",
+            "512": "images/icon512.png",
+            "1024": "images/icon1024.png"
+        }
+    },
+    "icons": {
+        "48": "images/icon48.png",
+        "72": "images/icon72.png",
+        "96": "images/icon96.png",
+        "128": "images/icon128.png",
+        "144": "images/icon144.png",
+        "192": "images/icon192.png",
+        "512": "images/icon512.png",
+        "1024": "images/icon1024.png"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
